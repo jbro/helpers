@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+brew update \
+  && brew upgrade
+
+brew list --cask > ~/.homebrew-installed-casks
+brew leaves --installed-on-request > ~/.homebrew-installed
+
