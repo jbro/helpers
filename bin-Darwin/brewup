@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 
 brew update \
-  && brew upgrade
+  && brew upgrade \
+  && brew cleanup
 
 brew list --cask > ~/local/homebrew-installed-casks
 brew leaves --installed-on-request > ~/local/homebrew-installed
