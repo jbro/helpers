@@ -4,7 +4,4 @@ brew update \
   && brew upgrade \
   && brew cleanup
 
-brew list --cask > ~/local/homebrew-installed-casks
-brew leaves --installed-on-request > ~/local/homebrew-installed
-brew tap > ~/local/homebrew-taps
-
+brew bundle dump --force --file ~/local/Brewfile
